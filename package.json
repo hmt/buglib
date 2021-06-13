@@ -1,0 +1,30 @@
+{
+  "name": "tempui",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/tempui.umd.js",
+  "module": "./dist/tempui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tempui.es.js",
+      "require": "./dist/tempui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vuedx-typecheck . && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vuedx/typecheck": "^0.7.4",
+    "@vuedx/typescript-plugin-vue": "^0.7.4",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.0-beta.70",
+    "vite-dts": "^1.0.2",
+    "vue": "^3.1.1"
+  }
+}
